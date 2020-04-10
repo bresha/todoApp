@@ -1,0 +1,29 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "Building my first project! It will be todo app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bresha/todoApp.git"
+  },
+  "author": "bresha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bresha/todoApp/issues"
+  },
+  "homepage": "https://github.com/bresha/todoApp#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "pg": "^8.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
