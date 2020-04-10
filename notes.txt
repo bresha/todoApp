@@ -1,0 +1,28 @@
+Build todo app!!!!!!
+
+1. Design database postgres
+1.1. What tables should I have?
+	- Tabels users and todos
+1.2. What columns in tables should I have?
+	- Table users should have columns user_id and it should be PK, username which should be unique and pwd_hash
+	- Table todos should have columns todo_id which is PK, user_id which is FK and points to users.user_id, todo_message which should be text, finished which should be boolean
+
+2. Make backend rest api with node
+2.1. What api endpoints should I use?
+	- signin
+	- login
+	- get todos by user name
+	- create todo
+	- update todo status
+	- delete todo
+
+3. Make frontend vanilla js
+3.1. What functions should have?
+	- you can sing in as new member
+	- you can login
+	- you can see all of yours todos
+	- you can make new todo
+	- you can delete to do
+	- you can mark todo as done and revert it as active
+	- you can filter todos (all, done, active)
+	
