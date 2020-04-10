@@ -5,7 +5,7 @@ const db = knex({
   connection: {
     host: '127.0.0.1',
     user: 'postgres',
-    password: 'ccdzljnjvv9',
+    password: 'bresha1234',
     database: 'tododb',
   },
 });

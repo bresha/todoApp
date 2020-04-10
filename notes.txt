@@ -11,8 +11,7 @@ Build todo app!!!!!!
 2. Make backend rest api with node
 2.1. What api endpoints should I use?
 	- signin -- post data for new user
-	- login -- get data of user
-	- get todos by user name -- get all todos of user
+	- login -- get all todos of user
 	- create todo -- post todo
 	- update todo status -- put todo
 	- delete todo -- delete todo
