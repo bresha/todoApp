@@ -3,6 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcrypt');
 const db = require('../config/db');
 
+// Register a user
 router.post('/', async (req, res) => {
   const { username, password } = req.body;
   if (!username || !password) {
@@ -30,6 +31,7 @@ router.post('/', async (req, res) => {
   }
 });
 
+// User login
 router.get('/', async (req, res) => {
   const { username, password } = req.body;
   if (!username || !password) {

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require('../config/db');
 
+// Crete todo
 router.post('/:username', async (req, res) => {
   const username = req.params.username;
   const { todo_message, finished } = req.body;
@@ -28,6 +29,7 @@ router.post('/:username', async (req, res) => {
   }
 });
 
+// Update todo status
 router.put('/:todo_id', async (req, res) => {
   const todo_id = req.params.todo_id;
   const finished = req.body.finished;
@@ -44,6 +46,7 @@ router.put('/:todo_id', async (req, res) => {
   }
 });
 
+// Delete todo
 router.delete('/:todo_id', async (req, res) => {
   const todo_id = req.params.todo_id;
 
