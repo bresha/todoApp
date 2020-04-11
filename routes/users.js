@@ -16,19 +16,14 @@ router.post('/', async (req, res) => {
   try {
     const salt = bcrypt.genSaltSync(10);
     const pwd_hash = bcrypt.hashSync(password, salt);
-    await db.transaction(async (trx) => {
-      const user = {
-        username,
-        pwd_hash,
-      };
+    const user = {
+      username,
+      pwd_hash,
+    };
 
-      const result = await db('users')
-        .returning('username')
-        .insert(user)
-        .transacting(trx);
+    const result = await db('users').returning('username').insert(user);
 
-      res.json({ username: result[0], todos: [] });
-    });
+    res.json({ username: result[0], todos: [] });
   } catch (err) {
     console.error(err);
     res.status(500).json('Server error');

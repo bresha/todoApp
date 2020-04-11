@@ -10,5 +10,6 @@ app.get('/', (req, res) => res.send('Helllo World!'));
 
 // Define routes
 app.use('/users', require('./routes/users'));
+app.use('/todos', require('./routes/todos'));
 
 app.listen(PORT, () => console.log(`App is listening on port ${PORT}`));
