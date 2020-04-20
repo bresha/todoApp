@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: green;
+  background-color: white;
+  font-family: 'B612 Mono', monospace;
+}
+
+/* ------ Navbar ------*/
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: green 1px solid;
+}
+
+.branding {
+  margin: 0 1rem;
+}
+
+.home {
+  cursor: pointer;
+}
+
+.login ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.login ul li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.login ul li:hover {
+  font-weight: bold;
+}
+
+/* ------ End of Navbar ------*/
+
+/* ------ Main Content ------*/
+
+/* ------ Welcome message ------*/
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+#welcome h1 {
+  font-size: 4rem;
+}
+
+#welcome p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* ------ End of Welcome message ------*/
+
+/* ------ Form content ------*/
+
+#form {
+  margin-top: 8rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input[type='text'],
+input[type='password'] {
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+  height: 2.5rem;
+  width: 15rem;
+  border: green 1px solid;
+  font-family: inherit;
+  padding-left: 0.5rem;
+  color: green;
+  outline: none;
+}
+
+.btn {
+  height: 2rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: green;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: rgba(0, 128, 0, 0.4);
+  font-size: 1rem;
+}
+
+#alert {
+  margin-top: 1rem;
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.hide-alert {
+  visibility: hidden;
+}
+
+/* ------ End of Form content ------*/
+
+/* ------ Todos content ------*/
+
+#todos-content {
+  margin-top: 3rem;
+  width: 720px;
+}
+
+#filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-options {
+  width: 33.33%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  background-color: green;
+  border: 1px solid green;
+  cursor: pointer;
+}
+
+.applied-filter {
+  color: green;
+  background-color: white;
+}
+
+.enter-todo {
+  margin-bottom: 2rem;
+}
+
+.enter-todo input[type='text'] {
+  width: calc(100% - 92px);
+}
+
+.enter-todo button {
+  background-color: green;
+  color: white;
+  width: 80px;
+  height: 2.5rem;
+  padding: 0.7rem;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* ------ Single todo ---------*/
+
+.todo {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.message {
+  height: 30px;
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.done {
+  height: 30px;
+  width: 20px;
+  background-color: green;
+  margin: 0 0.3rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.delete {
+  height: 30px;
+  width: 20px;
+  background-color: red;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.finished {
+  text-decoration: line-through;
+}
+/* ------ Single todo ---------*/
+
+/* ------ End of Todos content ------*/
+
+.hidden {
+  display: none;
+}
+
+/* ------ End of Main Content ------*/

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>todoApp</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="branding">
+      <h1 class="home" id="home">todoApp</h1>
+    </div>
+    <div id="greeting"></div>
+    <div class="login">
+      <ul>
+        <li id="nav-login-btn">Login</li>
+        <li id="nav-register-btn">Register</li>
+        <li class="hidden" id="nav-logout-btn">Logout</li>
+      </ul>
+    </div>
+  </nav>
+  <section id="main">
+    <div id="alert" class="hide-alert">Hidden element</div>
+    <div id="welcome">
+      <h1>todoApp</h1>
+      <p>Remind yourself what you should do</p>
+    </div>
+    <div class="hidden" id="form-container">
+
+      <form id="form" action="">
+        <label for="username">Username</label>
+        <br>
+        <input type="text" name="username" id="username" placeholder="Enter your username" required autocomplete="off">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required
+          autocomplete="off">
+        <br>
+        <button class="btn" type="submit" id="login-btn">Log in</button>
+        <button class="btn" type="submit" id="register-btn">Register</button>
+      </form>
+    </div>
+    <div class="hidden" id="todos-content">
+
+      <div id="filter">
+        <div class="filter-options" id="active-todos">Active</div>
+        <div class="filter-options" id="finished-todos">Finished</div>
+        <div class="filter-options" id="all-todos">All</div>
+      </div>
+      <div class="enter-todo">
+        <input type="text" name="todo" id="input-todo" autocomplete="off" placeholder="Enter your todo">
+        <button id="submit-todo">Submit</button>
+      </div>
+
+      <div id="todos-hook">
+      </div>
+
+
+
+  </section>
+  <script src="./app.js"></script>
+</body>
+
+</html>

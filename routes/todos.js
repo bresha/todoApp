@@ -51,8 +51,11 @@ router.delete('/:todo_id', async (req, res) => {
   const todo_id = req.params.todo_id;
 
   try {
-    await db('todos').where('todo_id', '=', todo_id).del();
-    res.json('deleted');
+    const result = await db('todos')
+      .returning('todo_id')
+      .where('todo_id', '=', todo_id)
+      .del();
+    res.json(result[0]);
   } catch (err) {
     console.error(err);
     res.status(500).json('Server error');
